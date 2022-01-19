@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual é o país</title>
+
+</head>
+<body>
+    <h1>Em qual país você nasceu !</h1>
+    Em qual país você nasceu: <input type="text" name="pais" id="pais">
+    <input type="button" value="Verificar" onclick="saber()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function saber(){
+            var local = window.document.querySelector('input#pais')
+            var res = window.document.querySelector('div#res')
+            var ter = Number(pais.value)
+            //res.innerHTML = `<p>O país que você nasceu é ${ter}</p>`
+            if (pais.value == 'Brasil'){
+                res.innerHTML += `Você é brasileiro !`
+            }else{
+                res.innerHTML += `Você é estrangeiro !`
+            }
+            
+            //res.innerHTML += 'Obrigado por visitar o Brasil !'
+        }
+    </script>
+</body>
+</html>
