@@ -4,25 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hora do dia</title>
+    <title>Verificador de idade</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
-<body onload="carregar()">
+<body>
     <header>
-        <h1>Hora do dia</h1>
+        <h1>Verificador de idade</h1>
     </header>
     <section>
-        <div id="msg">
-            Aqui vai aparecer a menssagem.
+        <div>
+            <p>Ano de nascimento: 
+            <input type="nummber" name="txtano" id="txtano">
+            </p> 
+            <p>
+                Sexo:
+                <input type="radio" name="radsex" id="masc" checked>
+                <label for="masc">Masculino:</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino:</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
         </div>
-        <div id="foto">
-            <img id="imagem" style="border-radius: 50%" width="250" height="250"  
-            src="fotomanha.jpg" alt="foto do dia">
+        <div id="res">
+            Preencha os dados acima para ver o resultado.
+            
         </div>
     </section>
     <footer>
-        <p>copy: Curso em vídeo</p>
+        <p>&copy; Curso de javascript</p>
     </footer>
     <script src="script.js"></script>
 </body>
 </html>
+//<img id="imagem" style="border-radius: 50%" width="250" height="250"  
